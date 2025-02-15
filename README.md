@@ -30,8 +30,12 @@ Se implementaron los siguientes ejercicios:
 
 ---
 
-## 📂 **Estructura del Proyecto**
+![Home](./public/home1.png)
 
+---
+
+## 📂 **Estructura del Proyecto**
+ ```
 test-nextjs-lafuente/
 └── src/
     └── app/
@@ -57,6 +61,7 @@ test-nextjs-lafuente/
         │   └── types.ts                // Definiciones de tipos globales
         └── hooks/
             └── useFetch.ts             // Hook personalizado para APIs
+ ```
 
 ## 🛠️ **Instrucciones para Ejecutar el Proyecto**
 
@@ -107,3 +112,25 @@ test-nextjs-lafuente/
 🔍 Comando para formatear todo el proyecto con Prettier:
 
 npx prettier --write 
+
+## 🖥️ Ejercicio 1: Next.js + MUI + API
+
+Esta sección muestra el listado de usuarios obtenido desde una API y renderizado con MUI.
+
+![Listado de Usuarios](./public/ejercicio1.png)
+
+---
+
+## 📱 Ejercicio 2: Capacitor - Geolocalización
+
+En este ejercicio se utiliza Capacitor para obtener la ubicación actual y mostrarla en un mapa.
+
+![Mapa de Geolocalización](./public/ejercicio2.png)
+
+---
+
+## ⚛️ Ejercicio 3: React Hooks & State Management
+
+Aquí se muestra el manejo de estado compartido con `Context API` y `useReducer`.
+
+![Dashboard de Eventos](./public/ejercicio3.png)
