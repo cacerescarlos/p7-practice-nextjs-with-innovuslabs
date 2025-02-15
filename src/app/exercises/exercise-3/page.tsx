@@ -29,7 +29,14 @@ export default function Exercise3Page() {
 
         {/* Columna derecha: Botón + Panel */}
         <Grid item xs={12} md={6}>
-          <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 4,
+            }}
+          >
             {/* Botón */}
             <EventButton />
 

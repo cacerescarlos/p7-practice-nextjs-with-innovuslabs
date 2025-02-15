@@ -7,7 +7,10 @@ export default function AnalyticsPanel() {
   const { state } = useAnalytics();
 
   return (
-    <Paper elevation={5} sx={{ mt: 4, width: "100%", p: 3, borderRadius: 4, textAlign: "center" }}>
+    <Paper
+      elevation={5}
+      sx={{ mt: 4, width: "100%", p: 3, borderRadius: 4, textAlign: "center" }}
+    >
       <Typography variant="h5" color="success.main" gutterBottom>
         🔍 Análisis en Tiempo Real
       </Typography>

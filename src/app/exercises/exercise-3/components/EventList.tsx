@@ -3,7 +3,13 @@ import React from "react";
 import { List, ListItem, ListItemText, Paper } from "@mui/material";
 import { useAnalytics } from "../AnalyticsContext";
 
-const items = ["📖 Libro", "💻 Laptop", "📱 Teléfono", "⌨️ Teclado", "🖥️ Monitor"];
+const items = [
+  "📖 Libro",
+  "💻 Laptop",
+  "📱 Teléfono",
+  "⌨️ Teclado",
+  "🖥️ Monitor",
+];
 
 export default function EventList() {
   const { logHover } = useAnalytics();
@@ -19,7 +25,10 @@ export default function EventList() {
               borderRadius: "10px",
               margin: "0.5rem 0",
               cursor: "pointer",
-              "&:hover": { backgroundColor: "#e0f7fa", transform: "scale(1.05)" },
+              "&:hover": {
+                backgroundColor: "#e0f7fa",
+                transform: "scale(1.05)",
+              },
               transition: "all 0.3s ease",
             }}
             onMouseEnter={logHover}

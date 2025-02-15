@@ -5,7 +5,9 @@ import UserList from "./UserList";
 import { User } from "@/utils/types";
 
 export default async function Exercise1Page() {
-  const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+  const response = await axios.get(
+    "https://jsonplaceholder.typicode.com/users",
+  );
   const users: User[] = response.data;
 
   return (

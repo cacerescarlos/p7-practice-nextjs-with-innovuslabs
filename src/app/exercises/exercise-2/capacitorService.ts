@@ -1,6 +1,7 @@
 "use client";
 import { Geolocation } from "@capacitor/geolocation";
 
+// Obtener la ubicación actual
 export const getCurrentLocation = async () => {
   try {
     const position = await Geolocation.getCurrentPosition();

@@ -1,24 +1,18 @@
 "use client";
 import React, { createContext, useContext, useReducer, ReactNode } from "react";
 
-// 🎯 Tipos del contexto
+// Tipos del contexto
 interface AnalyticsState {
   hoverEvents: number;
   clicks: number;
 }
 
-type AnalyticsAction =
-  | { type: "LOG_HOVER" }
-  | { type: "LOG_CLICK" }
-  | { type: "RESET_ANALYTICS" };
+type AnalyticsAction = { type: "LOG_HOVER" } | { type: "LOG_CLICK" } | { type: "RESET_ANALYTICS" };
 
-// 🎯 Estado inicial
-const initialState: AnalyticsState = {
-  hoverEvents: 0,
-  clicks: 0,
-};
+// Estado inicial
+const initialState: AnalyticsState = { hoverEvents: 0, clicks: 0 };
 
-// 🎯 Reducer para manejar las acciones
+// Reducer para manejar las acciones
 function analyticsReducer(state: AnalyticsState, action: AnalyticsAction): AnalyticsState {
   switch (action.type) {
     case "LOG_HOVER":
@@ -26,13 +20,13 @@ function analyticsReducer(state: AnalyticsState, action: AnalyticsAction): Analy
     case "LOG_CLICK":
       return { ...state, clicks: state.clicks + 1 };
     case "RESET_ANALYTICS":
-      return initialState; // Reinicia a 0
+      return initialState;
     default:
       return state;
   }
 }
 
-// 🎯 Tipos para el contexto
+// Tipos para el contexto
 interface AnalyticsContextType {
   state: AnalyticsState;
   logHover: () => void;
@@ -40,10 +34,10 @@ interface AnalyticsContextType {
   resetAnalytics: () => void;
 }
 
-// 🎯 Crear el contexto
+// Crear el contexto
 const AnalyticsContext = createContext<AnalyticsContextType | undefined>(undefined);
 
-// 🎯 Proveedor del contexto
+// Proveedor del contexto
 export const AnalyticsProvider = ({ children }: { children: ReactNode }) => {
   const [state, dispatch] = useReducer(analyticsReducer, initialState);
 
@@ -51,12 +45,14 @@ export const AnalyticsProvider = ({ children }: { children: ReactNode }) => {
   const logClick = () => dispatch({ type: "LOG_CLICK" });
   const resetAnalytics = () => dispatch({ type: "RESET_ANALYTICS" });
 
-  const value: AnalyticsContextType = { state, logHover, logClick, resetAnalytics };
-
-  return <AnalyticsContext.Provider value={value}>{children}</AnalyticsContext.Provider>;
+  return (
+    <AnalyticsContext.Provider value={{ state, logHover, logClick, resetAnalytics }}>
+      {children}
+    </AnalyticsContext.Provider>
+  );
 };
 
-// 🎯 Hook para acceder al contexto
+// Hook para acceder al contexto
 export const useAnalytics = () => {
   const context = useContext(AnalyticsContext);
   if (!context) throw new Error("useAnalytics debe usarse dentro de AnalyticsProvider");
