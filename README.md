@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Prueba Técnica: Frontend Engineer (Next.js + React + TypeScript)
 
-## Getting Started
+## 📖 Descripción
+Aplicación desarrollada como parte de la prueba técnica para el rol de **Frontend Engineer**.  
+La aplicación utiliza **Next.js 13+ con App Router**, **React**, **TypeScript**, **MUI** (Material UI) y **Capacitor**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ⚙️ **Tecnologías Utilizadas**
+- ⚛️ **React**  
+- 🚀 **Next.js** (App Router)  
+- 🛠️ **TypeScript**  
+- 🎨 **Material UI (MUI)**  
+- 📡 **Capacitor**  
+- 🔍 **Axios** para llamadas a APIs  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 **Estructura del Proyecto**
+test-nextjs-lafuente/
+ └── src/
+     ├── app/
+     │    └-- page.tsx                     // Página principal (opcional)
+          └-- exercises/
+     │    ├── exercise-1/                  // Ejercicio 1: Next.js + MUI + API
+     │    │    ├── page.tsx                // Página principal del ejercicio 1
+     │    │    ├── UserList.tsx            // Componente reutilizable
+     │    │    ├── theme.ts                // Tema MUI personalizado
+     │    │    └── api.ts                  // Llamada a la API
+     │    ├── exercise-2/                  // Ejercicio 2: Capacitor
+     │    │    ├── page.tsx                // Página principal del ejercicio 2
+     │    │    └── capacitorService.ts     // Lógica Capacitor
+     │    └── exercise-3/                  // Ejercicio 3: React Hooks + Context
+     │         ├── page.tsx                // Página principal del ejercicio 3
+     │         ├── AnalyticsContext.tsx    // Context para analytics
+     │         └── components/             // Subcarpeta para componentes
+     ├── components/
+     │    └── CommonButton.tsx             // Componente común reutilizable
+     ├── theme/
+     │    └── customTheme.ts               // Tema global MUI
+     ├── utils/
+     │    └── types.ts                     // Definiciones de tipos globales
+     └── hooks/
+          └── useFetch.ts                  // Hook personalizado para APIs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🛠️ **Instrucciones para Ejecutar el Proyecto**
 
-To learn more about Next.js, take a look at the following resources:
+1. Clonar el repositorio:  
+    ```bash
+    git clone https://github.com/tu-usuario/test-nextjs-lafuente.git
+    cd test-nextjs-lafuente
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Instalar dependencias:  
+    ```bash
+    npm install
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Iniciar el servidor de desarrollo:  
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+4. Abrir en el navegador:  
+    - 🌐 **http://localhost:3000**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📲 **Configuración de Capacitor**
+
+1. Inicializar Capacitor (si no se ha hecho):  
+    ```bash
+    npx cap init
+    ```
+
+2. Agregar plataforma (Android):  
+    ```bash
+    npx cap add android
+    ```
+
+3. Sincronizar cambios con Capacitor:  
+    ```bash
+    npx cap sync
