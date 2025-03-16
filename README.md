@@ -1,4 +1,4 @@
-# 🛠️ Test Técnico - Frontend (React/Next.js/TypeScript)
+# 🛠️ Práctica - Frontend (React/Next.js/TypeScript)
 
 ## 🚀 Descripción
 

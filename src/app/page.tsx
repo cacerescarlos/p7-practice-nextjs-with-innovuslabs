@@ -9,7 +9,7 @@ export default function HomePage() {
   return (
     <Container maxWidth="md" sx={{ textAlign: "center", mt: 6 }}>
       <Typography variant="h2" color="primary" gutterBottom>
-        🛠️ Prueba Técnica - Frontend Engineer 🚀
+        🛠️ Práctica NextJS 🚀
       </Typography>
       <Typography variant="h6" color="textSecondary" gutterBottom>
         Aplicación desarrollada con Next.js, React, TypeScript, MUI y Capacitor.
