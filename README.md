@@ -2,7 +2,7 @@
 
 ## 🚀 Descripción
 
-Este proyecto fue desarrollado como parte de una prueba técnica para el rol de **Desarrollador Frontend**.  
+Este proyecto fue desarrollado como parte de práctica de **NextJS**.  
 Se implementaron los siguientes ejercicios:
 
 1. **Next.js + React + MUI Basics:**  
