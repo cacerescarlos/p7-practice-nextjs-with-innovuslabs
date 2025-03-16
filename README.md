@@ -68,8 +68,8 @@ test-nextjs-lafuente/
 1. Clonar el repositorio:
 
    ```bash
-   git clone https://github.com/tu-usuario/test-nextjs-lafuente.git
-   cd test-nextjs-lafuente
+   git clone https://github.com/cacerescarlos/p7-practice-nextjs-with-innovuslabs.git
+   cd p7-practice-nextjs-with-innovuslabs
    ```
 
 2. Instalar dependencias:
