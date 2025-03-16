@@ -36,7 +36,7 @@ Se implementaron los siguientes ejercicios:
 
 ## 📂 **Estructura del Proyecto**
  ```
-test-nextjs-lafuente/
+p7-practice-nextjs-with-innovuslabs/
 └── src/
     └── app/
         ├── page.tsx               // Página principal (opcional)
